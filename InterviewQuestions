@@ -15,14 +15,28 @@
 */
 
 void helloWorld(void);
+void greeting(void);
 
 int main(void){
     helloWorld(void);
+    greeting(void);
     return 0;
 }
 
 
 //Code for first task:
 void helloWorld(void){
-    printf("Hello World");
+    printf("Hello World\n");
 }
+
+
+//Code for second task
+void greeting(void){
+    char name[];
+    printf("Hello, what is your name?\n");
+    scanf("%s", &name);
+    printf("Hi %s, hope your day is going great!", name);
+}
+
+
+
